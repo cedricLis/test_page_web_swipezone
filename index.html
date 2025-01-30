@@ -3,17 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Page Web</title>
+    <title>La Tour Eiffel</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur ma page web</h1>
+        <h1>Découvrez la Tour Eiffel</h1>
     </header>
+
     <main>
-        <p>Ceci est une page web simple.</p>
-        <button onclick="afficherMessage()">Cliquez-moi</button>
+        <img src="tour-eiffel.jpg" alt="Tour Eiffel" class="image-tour">
+        <p class="description">
+            La <strong>Tour Eiffel</strong> est un monument emblématique situé à Paris, en France.
+            Construite par Gustave Eiffel en 1889, elle mesure 330 mètres de haut et attire 
+            chaque année des millions de visiteurs du monde entier.
+        </p>
+        <button onclick="afficherDetails()">En savoir plus</button>
+
+        <div id="details" class="hidden">
+            <p>📍 **Localisation** : Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France</p>
+            <p>📅 **Construction** : 1887 - 1889</p>
+            <p>📏 **Hauteur** : 330 mètres</p>
+            <p>👥 **Visiteurs par an** : ~7 millions</p>
+        </div>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
